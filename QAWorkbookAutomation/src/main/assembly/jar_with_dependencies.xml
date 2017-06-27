@@ -1,0 +1,45 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <id>${version}</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <files>
+        <!--<file>
+          <source>${basedir}/VERSION</source>
+          <outputDirectory></outputDirectory>
+        </file>-->
+    </files>
+    <fileSets>
+        <!-- <fileSet>
+             <directory>${basedir}/src/main/assembly</directory>
+             <outputDirectory>patch</outputDirectory>
+             <includes>
+                 <include>logback.groovy</include>
+             </includes>
+         </fileSet>
+         <fileSet>
+             <directory>${basedir}/flyway</directory>
+             <outputDirectory>flyway</outputDirectory>
+         </fileSet>
+         <fileSet>
+             <directory>${basedir}/mybatis/scripts</directory>
+             <outputDirectory>migrations</outputDirectory>
+         </fileSet>
+         <fileSet>
+             <directory>${basedir}/bin</directory>
+             <outputDirectory>bin</outputDirectory>
+         </fileSet>
+         <fileSet>
+             <directory>${basedir}</directory>
+             <outputDirectory>conf</outputDirectory>
+         </fileSet>-->
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+</assembly>

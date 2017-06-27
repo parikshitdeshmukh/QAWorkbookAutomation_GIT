@@ -1,0 +1,1 @@
+Select PopulationName, Trend_Name, Critical_percentage, Trivial_percentage from QA_Reports_DB.dbo.QA_Threshold where DB_NAME()  like '%'+DB_KEY+'%'
